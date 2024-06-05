@@ -66,7 +66,7 @@ if (isset($_POST["kirim"])) {
         input[type="submit"]:hover {
             background-color: #45a049;
         }
-        .register-button,
+
         .manage-users-button {
             background-color: silver;
             color: black;
@@ -78,7 +78,7 @@ if (isset($_POST["kirim"])) {
             margin-top: 10px;
             width: 20%;
         }
-        .register-button:hover,
+
         .manage-users-button:hover {
             background-color: #999;
         }
@@ -114,6 +114,9 @@ if (isset($_POST["kirim"])) {
                     <input type="password" name="password" placeholder="Password" required>
                 </div>
                 <button class="manage-users-button" type="submit" name="kirim">Login</button>
+            </form>
+            <form action="index.php">
+                <button  class="logout-users-button" type="submit">Kembali</button>
             </form>
         </div>
     </div>

@@ -58,7 +58,7 @@ if (!isset($_SESSION['user_id'])) {
     }
 
     .edit-button {
-      background-color: #4caf50; /* Warna hijau */
+      background-color: #2c8f30; /* Warna hijau */
     }
 
     .action-button {
