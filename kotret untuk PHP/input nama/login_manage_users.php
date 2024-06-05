@@ -68,8 +68,8 @@ if (isset($_POST["kirim"])) {
         }
 
         .manage-users-button {
-            background-color: silver;
-            color: black;
+            background-color: #1c38ac;
+            color: white;
             border: none;
             padding: 8px 20px;
             cursor: pointer;
@@ -80,14 +80,26 @@ if (isset($_POST["kirim"])) {
         }
 
         .manage-users-button:hover {
-            background-color: #999;
-        }
-        .manage-users-button {
-            background-color: #4287f5;
-        }
-        .manage-users-button:hover {
             background-color: #3366cc;
+
         }
+
+        .logout-users-button {
+            background-color: #cc0000;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            border-radius: 5px;
+            margin-top: 10px;
+            width: 20%;
+        }
+        
+        .logout-users-button:hover {
+            background-color: #ff0000;
+        }
+
         .wrapper {
             display: flex;
             justify-content: center;

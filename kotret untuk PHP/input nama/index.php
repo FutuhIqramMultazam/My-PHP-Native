@@ -12,6 +12,10 @@ if (!isset($_SESSION['user_id'])) {
 <html>
   <head>
     <title>Input Data Nama</title>
+
+    <!-- menambahkan fonts google jika ingin menggunakan-->
+    <link rel="stylesheet" href="fonts-google.css">
+    
     <style>
         
   body {
@@ -82,6 +86,7 @@ if (!isset($_SESSION['user_id'])) {
       cursor: pointer;
       transition: 0.3s ease; /* Efek transisi */
       border-radius: 5px;
+      font-weight: bold;
     }
 
     .input-submit:hover {
@@ -129,13 +134,23 @@ if (!isset($_SESSION['user_id'])) {
       background-color: #0000ff; /* Warna biru */
     }
 
-
     .logout-button:hover {
       background-color: #cc0000; /* Warna merah tua */
     }
      .manage-users-button:hover {
       background-color: #0000cc; /* Warna biru tua */
     }
+
+    .logout-button,
+    .action-button,
+    .edit-button,
+    .manage-users-button,
+    .input-submit{
+      font-family: "work sans";
+    }
+    /* .nama{
+      text-align: left;
+    } */
 
   </style>
   </head>
@@ -174,7 +189,7 @@ if (!isset($_SESSION['user_id'])) {
         <?php while($row = $result->fetch_assoc()): ?>
         <tr>
           <td><?= $i; ?></td>
-          <td><?= $row["name"]; ?></td>
+          <td class="nama"><?= $row["name"]; ?></td>
           <td>
             <form action="delete.php" method="post" style="display: inline">
               <input type="hidden" name="id" value="<?php echo $row["id"]; ?>">
