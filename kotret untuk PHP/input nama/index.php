@@ -169,8 +169,8 @@ if (!isset($_SESSION['user_id'])) {
           <input type="submit" class="input-submit" value="Tambah" />
         </form>
 
-        <h2>Daftar Nama</h2>
         <form method="post" action="">
+          <h2>Daftar Nama</h2>
           <label for="search">Cari Nama:</label>
           <input type="text" id="search" name="search" placeholder="cari nama di sini"/>
           <input type="submit" class="input-submit" value="Cari" />
