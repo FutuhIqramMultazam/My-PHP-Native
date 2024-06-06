@@ -23,6 +23,9 @@ if (isset($_POST["kirim"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login manage users</title>
+    <!-- fonts google -->
+    <link rel="stylesheet" href="fonts-google.css">
+    
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -108,6 +111,11 @@ if (isset($_POST["kirim"])) {
         }
         p{
             color: red;
+        }
+
+        .logout-users-button,
+        .manage-users-button{
+            font-family: 'work sans';
         }
     </style>
 </head>

@@ -22,6 +22,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <html>
 <head>
     <title>Register</title>
+
+    <!-- fonts google -->
+    <link rel="stylesheet" href="fonts-google.css">
+    
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -68,8 +72,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             background-color: #999;
         }
         .login-button {
-            background-color: #4caf50;
-            color: black;
+            background-color: #cc0000;
+            color: white;
             border: none;
             padding: 8px 20px;
             cursor: pointer;
@@ -79,8 +83,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             width: 20%;
         }
         .login-button:hover {
-            background-color: #45a049;
+            background-color: #ff0000;
         }
+
+        .tambah,
+        .login-button{
+            font-family: 'work sans';
+            font-weight: bold;
+        }
+
     </style>
 </head>
 <body>
@@ -91,7 +102,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <br>
             <input type="password" name="password" placeholder="Password" required>
             <br>
-            <input type="submit" value="Tambah akun">
+            <input class="tambah" type="submit" value="Tambah akun">
         </form>
         <button class="login-button" onclick="window.location.href='login.php'">Kembali ke login</button>
     </div>

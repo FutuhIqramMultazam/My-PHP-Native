@@ -66,11 +66,11 @@ if (!isset($_SESSION['user_id'])) {
     }
 
     .action-button {
-      background-color: #ff0000; /* Warna merah */
-    }
-
-    .action-button:hover {
       background-color: #cc0000; /* Warna merah tua */
+    }
+    
+    .action-button:hover {
+      background-color: #ff0000; /* Warna merah */
     }
 
     .edit-button:hover {
@@ -113,7 +113,7 @@ if (!isset($_SESSION['user_id'])) {
       position: absolute;
       top: 10px;
       right: 10px;
-      background-color: #ff0000; /* Warna merah */
+      background-color: #cc0000; /* Warna merah tua */
       color: white;
       border: none;
       padding: 5px 10px;
@@ -121,6 +121,11 @@ if (!isset($_SESSION['user_id'])) {
       transition: 0.3s ease; /* Efek transisi */
       border-radius: 4px;
     }
+    
+    .logout-button:hover {
+      background-color: #ff0000; /* Warna merah */
+    }
+
     .manage-users-button {
       position: absolute;
       top: 40px;
@@ -131,14 +136,11 @@ if (!isset($_SESSION['user_id'])) {
       cursor: pointer;
       transition: 0.3s ease; /* Efek transisi */
       border-radius: 4px;
-      background-color: #0000ff; /* Warna biru */
-    }
-
-    .logout-button:hover {
-      background-color: #cc0000; /* Warna merah tua */
-    }
-     .manage-users-button:hover {
       background-color: #0000cc; /* Warna biru tua */
+    }
+    
+    .manage-users-button:hover {
+       background-color: #0000ff; /* Warna biru */
     }
 
     .logout-button,
@@ -148,6 +150,7 @@ if (!isset($_SESSION['user_id'])) {
     .input-submit{
       font-family: "work sans";
     }
+    
     /* .nama{
       text-align: left;
     } */

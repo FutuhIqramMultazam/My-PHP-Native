@@ -35,6 +35,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <html>
 <head>
     <title>Login</title>
+    
+    <!-- font google -->
+    <link rel="stylesheet" href="fonts-google.css">
+    
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -111,6 +115,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         align-items: center;
         height: 100vh; /* Menggunakan tinggi viewport untuk kontainer */
       }
+
+      .login,
+      .register-button,
+      .manage-users-button{
+        font-family: 'work sans';
+        font-weight:600;
+      }
+      
     </style>
 </head>
 <body>
@@ -125,7 +137,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <br>
             <input type="password" name="password" placeholder="Password" required>
             <br>
-            <input type="submit" value="Login">
+            <input class="login" type="submit" value="Login">
         </form>
         <button class="register-button" onclick="window.location.href='register.php'">Buat akun baru?</button>
         <button class="manage-users-button" onclick="window.location.href='login_manage_users.php'">Manage Users</button>
