@@ -9,8 +9,9 @@ $bulan=["januari","februari","maret","april","mei","juni","juli","agustus","sept
 
 // cara menampilkan array
 // memakai, var_dump(), print_r() 
+echo "menggunakan var_dump: <br>";
 var_dump($hari);
-echo "<br>";
+echo "<br> <br> menggunakan print_r: <br>";
 print_r($bulan);
 
 // menampilkan 1 elemen array
@@ -18,6 +19,7 @@ echo "<br><br>";
 echo $hari[1]; // di sini kita bisa memakai keyword echo
 echo "<br>";
 echo $bulan[2];
+echo "<br> <br> <br>"
 ?>
 
 
