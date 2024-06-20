@@ -36,7 +36,7 @@ if (isset($_POST["kirim"])){
 
     <form action="" method="post">
         <ul>
-            <input type="hidden" name="id" value="<?= $mhs['id'];?>" >
+            <input type="hidden" name="id" value="<?= $mhs['id'];?>" > <!--jika type tidak hidden, maka user lain bisa merubah data lain melalui id tersebut   -->
             <li><input type="text" name="nim" placeholder="NIM:" required value="<?=$mhs['nim'];?>"></li>
             <li><input type="text" name="nama" placeholder="Nama:" required value="<?=$mhs['nama'];?>"></li>
             <li><input type="text" name="email" placeholder="email:" value="<?=$mhs['email'];?>"></li>
