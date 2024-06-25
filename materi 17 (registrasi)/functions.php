@@ -159,7 +159,7 @@ function registrasi($data)
     }
 
     // enkripsi password
-    $password = password_hash($password, PASSWORD_DEFAULT);
+    $password = password_hash($password, PASSWORD_DEFAULT); // untuk mengacak password
 
     // tambahkan user baru ke database
     mysqli_query($conn, "INSERT INTO user VALUES('','$username','$password')");
