@@ -22,8 +22,6 @@ if (isset($_POST["login"])) {
         if (password_verify($password, $row["password"])) {
             // set session
             $_SESSION["login"] = true;
-
-
             header("location:index.php");
             exit;
         }
