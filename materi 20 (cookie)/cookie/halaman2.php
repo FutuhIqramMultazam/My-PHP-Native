@@ -1,6 +1,6 @@
 <?php
 
-echo $_COOKIE['nama'];
+echo "ini adalah isi cookie: ", $_COOKIE['nama'];
 
 echo "<br>";
 
