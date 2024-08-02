@@ -1,12 +1,10 @@
 // ambil element
-// var cari = document.getElementById("");
-// var tombol = document.getElementById("");
-// var tabel = document.getElementById("");
+var cari = document.getElementById("cari");
+var tombol = document.getElementById("tombol");
+var tabel = document.getElementById("tabel");
 
-// //tambah event
+//tambah event
 
-// cari.addEventListener("keyup", function () {
-//   console.log(cari.value);
-// });
-
-console.log("ok");
+cari.addEventListener("keyup", function () {
+  console.log(cari.value);
+});
