@@ -1,0 +1,1 @@
+a:2:{i:0;a:3:{s:4:"nama";s:11:"futuh iqram";s:4:"usia";i:20;s:13:"jenis kelamin";s:4:"pria";}i:1;a:3:{s:4:"nama";s:7:"Fadilah";s:4:"usia";i:20;s:13:"jenis kelamin";s:6:"wanita";}}
