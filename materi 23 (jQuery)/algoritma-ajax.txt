@@ -1,0 +1,15 @@
+bikin folder js
+- kasih id di input, button, dan bikin div di table kasih juga id
+- ambil semua element nya di file js
+- addEvent di input, tipe nya keyup dan buat anonymous function nya
+- instansiasi objec ajax menggunakan XMLHttp
+- cek kesiapan ajax menggunakan onready
+- lalu bikin perkondisian 
+- panggil metod readyState == 4 dan metod status == 200 (setelah ini isi di dalam body perkondisian nya opsional mau di kasih conslog atau alrt  dulu untuk memastikan ajax nya jalan atau Langsung pake innerHTMl) 
+- eksekusi Ajax 
+- panggil metod open lalu isi dengan 3 argumen 
+- request metod, folder ajax/mhs.php?keyword= keyword.value , asyncronus nya jadikan true
+- panggil metod send (dari sini bisa langsung cek dulu jika memakai alert dan conslog)
+- buat file mhs di ajax
+- lalu isi require ke function.php
+-
